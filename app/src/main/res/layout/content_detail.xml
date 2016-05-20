@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#cccccc"
+    tools:context="heima21.org.googleplay21.activity.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+    <!--下载的container-->
+    <FrameLayout
+        android:id="@+id/detail_download_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentBottom="true"
+        ></FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/detail_download_container"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--信息部分-->
+            <FrameLayout
+                android:id="@+id/detail_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+
+            <!--安全部分-->
+            <FrameLayout
+                android:id="@+id/detail_safe_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"></FrameLayout>
+
+            <!--图片部分-->
+            <FrameLayout
+                android:id="@+id/detail_pic_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"></FrameLayout>
+
+            <!--简介部分-->
+            <FrameLayout
+                android:id="@+id/detail_des_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"></FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

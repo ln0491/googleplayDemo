@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!--<attr name="tiTriangleHeight" format="dimension"/>
+    <attr name="tiTriangleWidth" format="dimension"/>
+    <attr name="tiTriangleColor" format="color"/>
+    <attr name="tiTriangleStyle" format="enum">
+        <enum name="fill" value="0"/>
+        <enum name="stroke" value="1"/>
+    </attr>
+    <attr name="tiTriangleStrokeWidth" format="dimension"/>-->
+    <!--<org.itheima.tabindicator.library.TabIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tiTabMode="triangle"
+        app:tiTriangleWidth="15dp"
+        app:tiTriangleHeight="10dp"
+        app:tiTriangleColor="#0000ff"
+        app:tiTriangleStyle="stroke"
+        app:tiTriangleStrokeWidth="2dp"
+        />-->
+    <!--indicator指示器,文档没有更新，添加ti的前缀-->
+    <org.itheima.tabindicator.library.TabIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tiTabMode="line"
+        app:tiLineColor="#0000ff"
+        app:tiLineStyle="wrap"
+        app:tiLineHeight="4dp"
+        />
+
+    <!--主viewpager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GooglePlay21</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="pagers">
+        <item>首页</item>
+        <item>应用</item>
+        <item>游戏</item>
+        <item>专题</item>
+        <item>推荐</item>
+        <item>分类</item>
+        <item>排行</item>
+    </string-array>
+    <string name="title_activity_detail">DetailActivity</string>
+<!--占位符的格式，%开启占位符，后面数字表示第几个占位的对象（position）,$开启占位，s表示string类型-->
+    <string name="detail_info_downloadnum">下载量：%1$s</string>
+    <string name="detail_info_version">版本：%1$s</string>
+</resources>

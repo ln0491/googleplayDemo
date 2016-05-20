@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/item_appinfo_bg"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+
+        <!--<org.itheima15.googleplay.view.RatioLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--app:rlRatio="2.43"-->
+            <!--app:rlRelative="width">-->
+
+        <!--保持父view的宽高比-->
+        <heima21.org.googleplay21.view.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            app:mRetative="RELATIVE_WIDTH"
+            app:mRatio="2.4"
+            android:layout_height="999dp">
+            <ImageView
+                android:id="@+id/item_subject_iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_default"/>
+        </heima21.org.googleplay21.view.RatioLayout>
+
+        <!--</org.itheima15.googleplay.view.RatioLayout>-->
+
+        <TextView
+            android:id="@+id/item_subject_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="title"/>
+    </LinearLayout>
+
+</FrameLayout>
